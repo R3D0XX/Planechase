@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import CardList from "./CardList";
 import CardForm from "./CardForm";
+import RandomCard from "./RandomCard";
 
 type Card = {
   id: number;
@@ -23,6 +24,10 @@ const App: React.FC = () => {
       <Header />
       <CardForm onAddCard={addCard} />
       <CardList cards={cards} />
+      <div className="APP">
+        <h1>Random Card</h1>
+        <RandomCard />
+      </div>
     </div>
   );
 };

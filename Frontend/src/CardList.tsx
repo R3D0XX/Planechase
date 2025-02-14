@@ -1,4 +1,5 @@
 import React from "react";
+import useFetchCards from "./hooks/useFetchCards";
 
 type Card = {
   name: string;
@@ -11,7 +12,8 @@ type CardListProps = {
   cards: Card[];
 };
 
-const CardList: React.FC<CardListProps> = ({ cards }) => {
+const cardList: React.FC<CardListProps> = ({ cards }) => {
+  const { card, loading, error } = useFetchCards(); //! to check with clg if fetching works. delete later!
   return (
     <div>
       <h2>Kartenliste </h2>
@@ -26,4 +28,4 @@ const CardList: React.FC<CardListProps> = ({ cards }) => {
   );
 };
 
-export default CardList;
+export default cardList;

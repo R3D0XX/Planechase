@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     <header>
       <h1>MTG Kartenmanager</h1>
       <nav>
-        <a href="/">Home</a>
+        <a href="/">Home </a>
         <a href="/add-card">Karte hinzufügen</a>
       </nav>
     </header>
